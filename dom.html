@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Domek</title>
+    <style>
+      span {
+        position: absolute;
+        top: 10vw;
+        left: 10vw;
+        background-color: red;
+        padding: 10px;
+        transition: 1s;
+      }
+      div {
+        position: absolute;
+        top: 40vw;
+        left: 20vw;
+        width: 0;
+        height: 0;
+        transition: 1s;
+      }
+      div:nth-of-type(2) {
+        transition-delay: 0.2s;
+      }
+      div:nth-of-type(3) {
+        transition-delay: 0.3s;
+      }
+      div:nth-of-type(4) {
+        transition-delay: 0.4s;
+      }
+      div:nth-of-type(5) {
+        transition-delay: 0.5s;
+      }
+      div:nth-of-type(6) {
+        transition-delay: 0.6s;
+      }
+      span:hover ~ div:nth-of-type(1) {
+        width: 30vw;
+        height: 20vw;
+        top: 20vw;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: rgb(196, 85, 85);
+      }
+      span:hover ~ div:nth-of-type(2) {
+        width: 3vw;
+        height: 4vw;
+        background-color: rgb(210, 221, 47);
+        top: 25vw;
+        left: 55%;
+      }
+      span:hover ~ div:nth-of-type(3) {
+        width: 3vw;
+        height: 4vw;
+        background-color: rgb(210, 221, 47);
+        top: 25vw;
+        left: 40%;
+      }
+      span:hover ~ div:nth-of-type(4) {
+        width: 3vw;
+        height: 5vw;
+        background-color: rgb(19, 13, 13);
+        top: 35vw;
+        left: 50%;
+      }
+      span:hover ~ div:nth-of-type(5) {
+        width: 3vw;
+        height: 5vw;
+        background-color: rgb(19, 13, 13);
+        top: 8vw;
+        left: 60%;
+      }
+      span:hover ~ div:nth-of-type(6) {
+        top: 20vw;
+        left: 50%;
+        width: calc(30vw / 1.41);
+        height: calc(30vw / 1.41);
+        transform: translate(-50%, -50%) rotate(45deg);
+        background-color: rgb(19, 13, 13);
+        z-index: -1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <span>BUDUJEMY</span>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>

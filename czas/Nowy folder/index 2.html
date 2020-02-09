@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Odliczanie czasu</title>
+	<script type="text/javascript">
+	function tyu(){
+	var d = document.getElementById("myInput").value;
+	document.getElementById("pole").innerHTML =d;}
+function copy_data(containerid) {
+  var range = document.createRange();
+  range.selectNode(containerid); //changed here
+  window.getSelection().removeAllRanges(); 
+  window.getSelection().addRange(range); 
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();
+  alert("data copied");
+}
+	</script>
+	
+</head>
+<body>
+		<input type="text" value="Hello World" id="myInput">
+		<button onclick="tyu()">wypisz</button>
+		
+<div id="pole"></div>
+<!-- The button used to copy the text -->
+<button onclick="copy_data(pole)">Copy text</button>
+
+<a href="adrespodstrony.html#nazwaid">link</a>
+</body>
+</html>
